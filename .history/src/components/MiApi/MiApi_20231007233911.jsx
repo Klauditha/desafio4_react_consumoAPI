@@ -6,8 +6,9 @@ const MiApi = ({ busqueda, ordenar }) => {
   const [data, setData] = useState([]);
   const urlApiMovie =
     "https://api.themoviedb.org//3/discover/movie?language=es-cl";
-    //"https://api.themoviedb.org/3/"
-  const urlImage = "https://image.tmdb.org/t/p/w500/"; //"https://image.tmdb.org/t/p/original/"
+  //const urlApiGenre = 'https://api.themoviedb.org/3/genre/movie/list?language=en'
+  const urlImage = "https://image.tmdb.org/t/p/w500/";
+  //const urlApiMovie ="https://api.themoviedb.org/3/movie/968051?language=en-US"
   const APIKey =
     "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMzY4NTI5NGZhNTdlNWQzNGU2Y2Y4Zjc0ZmFhNjA4OCIsInN1YiI6IjY1MjA1YjM1OTY3Y2M3MzQyNDZhMTJkMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7s6vAx8hFfJ92mTYx1fMKlfUgcJLwpTVt5YjDd72TFc";
 
