@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
-
+import './MyModal.css'
 const MyModal = ({ show, setShow, title, overview, backdrop_path }) => {
   return (
     <>
@@ -21,10 +21,11 @@ const MyModal = ({ show, setShow, title, overview, backdrop_path }) => {
         <Modal.Body>
           <Container>
             <Row>
-              <Col>{overview}</Col>
-            </Row>
-            <Row>
-              <Col>
+              <Col id="modal-text" md="6" className="text-justify">
+                {overview}
+              </Col>
+              <Col md="6">
+                {" "}
                 <Image className="modal-img" src={backdrop_path} thumbnail />
               </Col>
             </Row>

@@ -1,0 +1,35 @@
+.mycard {
+  width: 18rem !important;
+  align-items: center;
+  background-color:rgb(169, 167, 173)
+}
+.card img {
+  width: 100%;
+}
+.card-title {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+  margin: auto;
+}
+.card-body {
+  padding: 0;
+  font-size: 14px;
+}
+.card-text {
+  text-align: center;
+}
+.card-footer {
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .mycard {
+    width: 18rem !important;
+    align-items: center;
+  }
+  .card img {
+    width: 16rem;
+  }
+
+}

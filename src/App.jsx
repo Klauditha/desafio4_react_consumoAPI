@@ -1,9 +1,8 @@
 import MiApi from "./components/MiApi/MiApi";
 import { Container } from "react-bootstrap";
 import "./App.css";
-import Buscador from "./components/Buscador/Buscador";
 import { useState } from "react";
-import Ordenar from "./components/Ordenar/Ordenar";
+import Header from "./components/Header/Header";
 
 const App = () => {
   const [busqueda, setBusqueda] = useState("");
@@ -11,11 +10,7 @@ const App = () => {
   return (
     <>
       <Container fluid>
-        <h1>Recomendaciones de Películas Más Populares</h1>
-        <div id="inputCabecera" >
-          <Buscador setBusqueda={setBusqueda} />
-          <Ordenar setOrdenar={setOrdenar} />
-        </div>
+        <Header setBusqueda={setBusqueda} setOrdenar={setOrdenar}/>
         <MiApi busqueda={busqueda} ordenar={ordenar} />
       </Container>
     </>

@@ -2,6 +2,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import MyModal from "../MyModal/MyModal";
+import "./MyCard.css";
 
 const MyCard = ({
   poster_path,
@@ -16,11 +17,11 @@ const MyCard = ({
   return (
     <>
       <Card
-        className="bg-light text-dark bg-opacity-25"
+        className=" g-dark text-dark bg-opacity-25 mycard"
         border="light"
         style={{ width: "18rem" }}
       >
-        <Card.Img variant="top" src={poster_path} />
+        <Card.Img variant="top" src={backdrop_path} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
@@ -37,7 +38,7 @@ const MyCard = ({
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button variant="light" size="md" onClick={() => setShow(true)}>
+          <Button variant="dark" size="sm" onClick={() => setShow(true)}>
             Ver más
           </Button>
           <MyModal
@@ -45,7 +46,7 @@ const MyCard = ({
             setShow={setShow}
             title={title}
             overview={overview}
-            backdrop_path={backdrop_path}
+            backdrop_path={poster_path}
             onHide={() => setShow(false)}
           />
         </Card.Footer>

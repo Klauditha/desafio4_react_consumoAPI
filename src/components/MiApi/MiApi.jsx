@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import MyCard from "../MyCard/MyCard";
 import Container from "react-bootstrap/Container";
-
+import "./MiApi.css";
 const MiApi = ({ busqueda, ordenar }) => {
   const [data, setData] = useState([]);
   const urlApiMovie =
     "https://api.themoviedb.org//3/discover/movie?language=es-cl";
-    //"https://api.themoviedb.org/3/"
-  const urlImage = "https://image.tmdb.org/t/p/w500/"; //"https://image.tmdb.org/t/p/original/"
+  const urlImage = "https://image.tmdb.org/t/p/w500/";
   const APIKey =
     "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMzY4NTI5NGZhNTdlNWQzNGU2Y2Y4Zjc0ZmFhNjA4OCIsInN1YiI6IjY1MjA1YjM1OTY3Y2M3MzQyNDZhMTJkMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7s6vAx8hFfJ92mTYx1fMKlfUgcJLwpTVt5YjDd72TFc";
 

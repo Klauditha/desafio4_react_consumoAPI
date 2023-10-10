@@ -1,0 +1,26 @@
+.modal-header {
+  background-color: #2a292e;
+  color: white;
+}
+.modal-content .modal-title {
+  text-align: center;
+  font-size: 20px;
+}
+.modal-content {
+  background-color: #f1e7e7;
+}
+.modal-img {
+  width: 80%;
+  margin: auto;
+}
+
+#modal-text {
+  font-size: 14px !important;
+}
+
+@media (min-width: 1280px) {
+  .modal-img {
+    width: 100%;
+    margin: auto;
+  }
+}
