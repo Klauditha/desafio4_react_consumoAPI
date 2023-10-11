@@ -1,5 +1,5 @@
 import Form from "react-bootstrap/Form";
-const Ordenar = ({ setOrdenar }) => {
+const Ordenador = ({ setOrdenar }) => {
   return (
     <Form.Select
       aria-label="Default select example"
@@ -16,4 +16,4 @@ const Ordenar = ({ setOrdenar }) => {
   );
 };
 
-export default Ordenar;
+export default Ordenador;

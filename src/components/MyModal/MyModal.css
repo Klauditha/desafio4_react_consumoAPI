@@ -1,3 +1,8 @@
+.modal {
+  width: 90%;
+  margin:auto;
+}
+
 .modal-header {
   background-color: #2a292e;
   color: white;
@@ -19,6 +24,11 @@
 }
 
 @media (min-width: 1280px) {
+  .modal {
+    display: flex !important;
+    justify-content: center;
+   
+  }
   .modal-img {
     width: 100%;
     margin: auto;
